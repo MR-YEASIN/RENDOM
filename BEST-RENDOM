@@ -1,0 +1,3 @@
+improt os
+import YEASIN
+YEASIN.loging()
