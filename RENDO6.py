@@ -2,7 +2,7 @@
 
 import os, sys, platform
 
-os.system('xdg-open https://facebook.com/groups/658593889736993/')
+os.system('xdg-open https://www.facebook.com/profile.php?id=100049277964296')
 
 try:
 
@@ -20,11 +20,11 @@ os.system('git pull')
 
 bit = platform.architecture()[0]
 
-if bit == '64bit':
+if bit == '32bit':
 
-    if not os.path.isfile('RENDOM64.cpython-311.so'):
+    if not os.path.isfile('RENDOM32.cpython-311.so'):
 
-        os.system('curl https://raw.githubusercontent.com/MR-YEASIN/DATA/main/RENDOM64.cpython-311.so > RENDOM64.cpython-311.so') 
+        os.system('curl https://raw.githubusercontent.com/MR-YEASIN/DATA/main/RENDOM64.cpython-311.so > RENDOM32.cpython-311.so') 
 
         os.system("chmod 777 RENDOM64*")
         
@@ -32,7 +32,7 @@ if bit == '64bit':
 
     else:
 
-        import RENDOM64
+        import RENDOM32
 
 elif bit == '32bit':
 
